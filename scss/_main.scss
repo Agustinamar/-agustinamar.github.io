@@ -1,0 +1,283 @@
+.novedadesOfertas{
+    margin-top: 54px;
+}
+
+.cointainerProducts{
+    margin: 0 12%;
+    background: $bg_darkGrey;
+    .navProducts {
+        width: 100%;
+        height: 50px;
+        p{
+            font-size: 30px;
+            padding-top: 8px;
+            position: absolute;
+            text-decoration: underline#d9e260 3px;
+        }
+        ul{
+            text-align: right;
+            list-style-type: none;
+            li{
+                margin-top: 14px;
+                margin-right: 12px;
+                font-size: 20px;
+                display: inline-block;
+                a{
+                    color: black;   
+                }
+                .active {
+                    text-decoration: underline#d9e260 3px;
+                }
+                
+            }
+        }
+    }
+    .bottonProduct{
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+        
+    }
+    .continerCard{
+        background: $bg_lightGrey;
+        margin: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row; 
+        .cardsProduct {
+            width: 250px;
+            height: 350px;
+            overflow: hidden;
+            margin: 20px 48px;
+            border-radius: 10px;
+            position: relative;
+            background-size: cover;
+            background-position: center top;
+            background: linear-gradient(180deg, #6DC4FF 0%, #0B40FF 52.08%, #3300FF 100%);
+            img{
+                width: 100%;
+                height: auto;
+            }
+            .card-title {
+                left: 0;
+                bottom: 0;
+                height: 18%;
+                width: 100%;
+                position: absolute;
+                text-align: center;
+                background: transparent;
+                text-transform: uppercase;
+                transition: 0.3s ease-in-out;
+                h3 {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+            .card-Details {
+                position: absolute;
+                bottom: -450px;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                box-shadow: inset -4px -4px 20px rgba(255, 255, 255, 0.35), inset 4px 4px 20px rgba(255, 255, 255, 0.35);
+                transition: 0.3s ease-in-out;
+                button{
+                    float: left;
+                    width: 140px;
+                    height: 35px;
+                    border: none;
+                    position: sticky;
+                    border-radius: 20px;
+                    font-size: 12px;
+                    margin: 0 56px;
+                    background: #ff00b8;
+                    transition: transform .5s;
+                    &:hover{
+                        color: #ff00b8;
+                        background: #fff;
+                        transition: .4s;
+                        transform: scale(1.1);
+                    }
+                }
+                .details{
+                    h4{
+                        position: absolute;
+                        width: 100%;
+                        top: 8%;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 30px;
+                        color: #fff;
+                    }
+                    p{
+                        position: absolute;
+                        width: 70%;
+                        margin-left: 15%;
+                        margin-right: 15%;
+                        top: 25%;
+                        text-align: center;
+                        color: #E7E7E7;
+                        font-weight: bold;
+                        font-family: Roboto;
+                        font-size: 14px;
+                    }
+                    h2{
+                        position: absolute;
+                        top: 70%;
+                        text-align: center;
+                        width: 100%;
+                        color: #fff;
+                        font-size: 19px;
+                        span{
+                            font-size: 21px;
+                        }
+                    }
+                }
+                
+            }
+            button {
+                position: absolute;
+                top: 82%;
+                cursor: pointer;
+                color: #fff;
+                font-weight:  bold;
+                text-transform: uppercase;
+            }
+            &:hover .card-title{
+                bottom: -75px;
+            }
+            &:hover .card-Details{
+                bottom: 0;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .novedadesOfertas{
+        margin-top: -3px;
+    }
+    .cointainerProducts{
+        margin: 0 2%;
+        .navProducts{
+            p{
+                font-size: 26px;
+            }
+            ul{
+                li{
+                    font-size: 12px;
+                    margin-top: 24px;
+                    margin-right: 1px;
+                }
+            }
+        }
+        .continerCard{
+            margin: 6px;
+            .cardsProduct{
+                width: 200px;
+                height: 300px;
+                margin: 8px 10px;
+                .card-title{
+                    h3{
+                        font-size: 18px;
+                    }
+                }
+                .card-Details{
+                    button{
+                        margin: 0 14.8%;
+                    }
+                }
+            }
+        }
+    }
+    }
+
+@media (min-width: 481px) and (max-width: 768px){
+.novedadesOfertas {
+    margin-top: 23px;
+}
+
+.cointainerProducts{
+    margin: 0 3%;
+    .navProducts{
+        ul{
+            li{
+                margin-top: 20px;
+                margin-right: 8px;
+                font-size: 16px;
+            }
+        }
+    }
+    .continerCard{
+        margin: 4px;
+        .cardsProduct{
+            width: 200px;
+            height: 300px;
+            margin: 10px 18px;
+            .card-title{
+                h3{
+                    font-size: 18px;
+                }
+            }
+            .card-Details{
+                button{
+                    margin: 0 14.8%;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+.novedadesOfertas{
+    margin-top: 55px;
+}
+.cointainerProducts{
+    margin: 0 8%;
+    .navProducts{
+        ul{
+            li{
+                margin-top: 20px;
+                font-size: 18px;
+            }
+        }
+    }
+    .continerCard{
+        .cardsProduct{
+            width: 200px;
+            height: 300px;
+            margin: 16px 33px;
+            .card-title{
+                h3{
+                    font-size: 20px;
+                }
+            }
+            .card-Details{
+                button{
+                    margin: 0 15.6%;
+                }
+                .details{
+                    h4{
+                        font-size: 24px;
+                    }
+                    p{
+                        font-size: 12px;
+                    }
+                    h2{
+                        font-size: 17px;
+                        span{
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
